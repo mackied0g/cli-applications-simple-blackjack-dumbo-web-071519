@@ -38,12 +38,12 @@ def hit?(card_total)
   elsif user_input == "s"
     card_total #return the number and prompt user to hit again
   else
-    def invalid_command
-  puts "Please enter a valid command"
-  prompt_user
-  get_user_input
-end
     invalid_command
   end
 end
 
+def invalid_command
+  puts "Please enter a valid command"
+  prompt_user
+  get_user_input
+end
